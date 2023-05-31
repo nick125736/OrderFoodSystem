@@ -31,8 +31,7 @@ public class MainActivity extends AppCompatActivity {
                                 s1,
                                 check,
                                 new DialogInterface.OnMultiChoiceClickListener() {
-                                    public void onClick(DialogInterface arg0,
-                                                        int which, boolean isCheck) {
+                                    public void onClick(DialogInterface arg0, int which, boolean isCheck) {
                                         if (isCheck) {
                                             check[which] = true;
                                         }
@@ -41,8 +40,7 @@ public class MainActivity extends AppCompatActivity {
                         .setPositiveButton("確定",
                                 new DialogInterface.OnClickListener() {
                                     @Override
-                                    public void onClick(DialogInterface arg0,
-                                                        int arg1) {
+                                    public void onClick(DialogInterface arg0, int arg1) {
                                         String tmp = "";
                                         for (int i = 0; i < check.length; i++) {
                                             if (check[i]) {
@@ -57,8 +55,7 @@ public class MainActivity extends AppCompatActivity {
                         .setNegativeButton("離開",
                                 new DialogInterface.OnClickListener() {
                                     @Override
-                                    public void onClick(DialogInterface dialog,
-                                                        int which) {
+                                    public void onClick(DialogInterface dialog, int which) {
                                     }
                                 }).show();
             }
